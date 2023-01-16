@@ -35,7 +35,13 @@ jobs:
       # See https://cmake.org/cmake/help/latest/manual/ctest.1.html for more detail
       run: ctest -C ${{env.BUILD_TYPE}}
       
-    - name: Run_binary 
+    - name: Run binary 
       working-directory: ${{github.workspace}}/build
       run: ./MyExample 
 
+    - name: Archive binary
+      uses: actions/upload-artifact@v3
+      with:
+        name: binary
+        path: ${{github.workspace}}/build/MyExample
+        
