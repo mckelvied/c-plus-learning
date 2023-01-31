@@ -1,0 +1,7 @@
+[
+{
+  "directory": "/workspaces/c-plus-learning/build",
+  "command": "/usr/bin/g++ -g -o CMakeFiles/MyExample.dir/simple_main.cpp.o -c /workspaces/c-plus-learning/simple_main.cpp",
+  "file": "/workspaces/c-plus-learning/simple_main.cpp"
+}
+]
